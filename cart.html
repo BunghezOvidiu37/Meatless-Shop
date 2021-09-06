@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toate Produsele - Meatless Shop</title>
+    <link rel="stylesheet" href="customizare-main-page.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- !The top Part ( the header) -->
+
+
+        <div class="container container-top">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="main-page.html">
+                        <img src="poze/Logo.png" alt="Logo" width="200px">
+                    </a>
+                </div>
+                <nav class="navbar-buttons">
+                    <ul id="MenuItems">
+                        <li><a href="main-page.html">Home</a></li>
+                        <li><a href="produse.html">Produse</a></li>
+                        <li><a href="Despre-Noi/despre.html">Despre Noi</a></li>
+                        <li><a href="contacte.html">Contacte</a></li>
+                        <li><a href="http://localhost:5001/">Contul tău</a></li>  
+                    </ul>
+
+                </nav>
+                <a href="/cart.html" id="container-cart-icon">
+                    <img src="/poze/cart.png" alt="Cart Image" width="40px" height="40px">
+                    <p id="added-product-number"></p>
+                </a>
+                <img src="poze/menu-icon.png" alt="menu icon" class="menu-icon" onclick="menuToggle()">
+            </div>
+        </div>
+
+<!-- !---card items details--- -->
+
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th class="th-top" id="product-topper" style="color: white; font-size: larger;"><b> Product </b></th>
+                    <th class="th-top" id="quantity-topper" style="color: white; font-size: larger;"><b> Quantity </b></th>
+                    <th class="th-top" id="subtotal-topper" style="color: white; font-size: larger;"><b> Subtotal </b></th>
+                </tr>
+                <!-- primul produs -->
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="poze/verdino-burger.png" alt="burger" width="200px">
+                            <div>
+                                <p>Burger Verdino</p>
+                                <small>Price: 17.00 Lei</small>
+                                <br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>17.00 Lei</td>
+                </tr>
+
+                <!-- al doilea produs -->
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="poze/verdino-branza.png" alt="branza" width="200px">
+                            <div>
+                                <p>Burger Verdino</p>
+                                <small>Price: 15.00 Lei</small>
+                                <br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>15.00 Lei</td>
+                </tr>
+
+
+                <!-- al treilea produs -->
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="poze/verdino-hotdog.png" alt="hot-dog" width="200px">
+                            <div>
+                                <p>Burger Verdino</p>
+                                <small>Price: 22.00 Lei</small>
+                                <br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>22.00 Lei</td>
+                </tr>
+            
+            </table>
+            
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>54 Lei</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>10.29 Lei</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>43.71 Lei</td>
+                    </tr>
+
+                </table>
+                <button class="submit-cart-button"> Trimite comanda!</button>
+            </div>
+
+
+        </div>
+
+
+<!-- !------footer------- -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Descarcă aplicația noastră!</h3>
+                <p>Aplicația va funcționa pe platforma Android! <br>
+                
+                </p>
+                <div class="app-logo">
+                    <a href="https://github.com/BunghezOvidiu37" target="_blank">
+                        <img src="poze/bottom-application-logo/android_logo_icon_124318.png" alt="android">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="#"><img src="poze/Logo.png" alt="logo"></a>
+                <p>Ne dorim să ducem practicile vegane la cât mai mulți oameni pentru a avea grijă de noi, de animale și de planetă.</p>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us!</h3>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank"><li>Facebook</li></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li>Instagram</li></a>
+                    <a href="https://www.youtube.com/" target="_blank"><li>Youtube</li></a>
+                    <br>
+                    <li>e-Mail US!</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Meatless Shop</p>
+    </div>
+</div>
+
+
+
+
+
+<!-- ! JS script here for toggleMenu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == '0px'){
+                MenuItems.style.maxHeight = '200px'
+            }
+
+            else{
+                MenuItems.style.maxHeight = '0px'
+            }
+
+        }
+    </script>
+
+    <script src="add-to-cart.js"></script>
+
+
+
+</body>
+</html>

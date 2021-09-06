@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toate Produsele - Meatless Shop</title>
+    <link rel="stylesheet" href="customizare-main-page.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- !The top Part ( the header) -->
+
+
+        <div class="container container-top">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="main-page.html"><img src="poze/Logo.png" alt="Logo" width="250px"></a>
+                </div>
+                <nav class="navbar-buttons">
+                    <ul id="MenuItems">
+                        <li><a href="main-page.html">Home</a></li>
+                        <li><a href="produse.html">Produse</a></li>
+                        <li><a href="Despre-Noi/despre.html">Despre Noi</a></li>
+                        <li><a href="contacte.html">Contacte</a></li>
+                        <li><a href="http://localhost:5001/">Contul tău</a></li>  
+                    </ul>
+                </nav>
+                <img src="poze/cart.png" alt="Cart Image" width="40px" height="40px">
+                <img src="poze/menu-icon.png" alt="menu icon" class="menu-icon" onclick="menuToggle()">
+            </div>
+            
+        </div>
+
+    <div class="small-container">
+
+
+        <div class="row row-2">
+            <h2>Toate produsele</h2>
+
+        </div>
+        <h2>Toate Produsele de la VERDINO</h2>
+
+
+
+        <div class="row">
+            <div class="col-4 row-distance-product">
+                <a href="burger-verdino.html" >
+                    <img src="poze/verdino-burger.png" alt="verdino-burger">
+                </a>                
+                <h4>Burger Vegan Congelat x2 buc</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>17.00 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="guada.html">
+                    <img src="poze/verdino-branza.png" alt="verdino-burger">
+                </a>                <h4>&nbsp;Gouda Vegană &nbsp;150gr &nbsp;&nbsp;x1 buc
+                </h4>
+
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>15.00 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="hot-dog.html"><img src="poze/verdino-hotdog.png" alt="verdino-burger"></a>
+                <h4>Hot-Dog Vegan Congelați x 14 buc</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p>22.00 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="mici.html"><img src="poze/verdino-mici.png" alt="verdino-burger"></a>
+                <h4>Mici Vegani Congelat x4 buc</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>12.00 Lei</p>
+            </div>
+        
+
+        <!-- !toate de la inedit -->
+        <h2>Toate produsele de la INEDIT</h2>
+        <div class="row">
+            <div class="col-4 row-distance-product">
+                <a href="/inedit/tofu.html"><img src="/poze/inedit/tofu_afumat_1.png" alt="verdino-burger"></a>
+                <h4>Tofu Afumat</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>7.39 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/inedit/maioneza.html"><img src="/poze/inedit/maioneza.png" alt="verdino-burger"></a>
+                <h4>Maioneză Vegetală Inedit
+                </h4>
+
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>8,05 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="inedit/soia.html"><img src="/poze/inedit/texturata.png" alt="verdino-burger"></a>
+                <h4>Soia Texturată</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>1.70 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="inedit/batoane-vegetale.html"><img src="/poze/inedit/batoane.png" alt="verdino-burger"></a>
+                <h4>Batoane Vegetale</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>11.30 Lei</p>
+            </div>
+        </div>
+
+        <!-- !toate produsele de la aivia -->
+
+        <h2>Toate produsele de la AIVIA</h2>
+        <div class="row aivia">
+            <div class="col-4 row-distance-product">
+                <a href="/aivia/salam.html"><img src="/poze/aivia/salam-picant-intens-afumat.jpg" alt="verdino-burger"></a>
+                <h4>Salam Vegan Picant puternic Afumat</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>7.39 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/aivia/parizer.html"><img src="/poze/aivia/parizer-cu-ardei.jpg" alt="verdino-burger"></a>
+                <h4>Parizer Vegan cu Adrei
+                </h4>
+
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>8,05 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/aivia/sunca.html"><img src="/poze/aivia/sunca-intens-afumata.jpg" alt="verdino-burger"></a>
+                <h4>Șuncă Vegană intens Afumată</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>1.70 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/aivia/carnati.html"><img src="/poze/aivia/carnati-afumati-picanti.jpg" alt="verdino-burger"></a>
+                <h4>Cârnați Vegani Afumați</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>11.30 Lei</p>
+            </div>
+        </div>
+        <!-- !------------------ -->
+
+
+<!-- !------------- -->
+        <!-- !toate produsele de la sanovita -->
+
+        <h2>Toate produsele de la SanoVita</h2>
+        <div class="row aivia">
+            <div class="col-4 row-distance-product">
+                <a href="/sanovita/granule-soia.html"><img src="poze/sanovita/granule-vegetale-300g.jpg" alt="Tofu Afumat"></a>
+                <h4>Granule vegetale de Soia 200gr</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>4.39 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/sanovita/lapte-migdale.html"><img src="poze/sanovita/lapte-de-migdale-1l.jpg" alt="Tofu Afumat"></a>
+                <h4>Lapte de Migdale 1L
+                </h4>
+
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>10,50 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/sanovita/seminte-chia.html"><img src="poze/sanovita/seminte-de-chia-bio-200g.jpg" alt="Tofu Afumat"></a>
+                <h4>Semințe de chia 200gr</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>7.37 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/sanovita/ulei-cocos.html"><img src="poze/sanovita/ulei-de-cocos-ecologic-500-ml.jpg" alt="Tofu Afumat"></a>
+                <h4>Ulei de cocos 500ml</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>23.33 Lei</p>
+            </div>
+        </div>
+<!-- !---- -->
+
+
+
+
+
+
+        <!-- !toate produsele de la vyro -->
+
+        <h2>Toate produsele de la VYRO</h2>
+        <div class="row aivia">
+            <div class="col-4 row-distance-product">
+                <a href="/vyro/tort-nuci.html"><img src="poze/bistrovegan/25-min.png" alt="Tofu Afumat"></a>
+                <h4>Tort vegan cu nuci</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>13.39 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/vyro/tort-vanilie.html"><img src="poze/bistrovegan/prajitura4.png" alt="Tofu Afumat"></a>
+                <h4>Tort vegan cu vanilie si ciocolata
+                </h4>
+
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>10,00 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/vyro/oreo.html"><img src="poze/bistrovegan/oreo.png" alt="Tofu Afumat"></a>
+                <h4>Prajitura vegana cu oreo</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>7.77 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/vyro/torc-ciocolata.html"><img src="poze/bistrovegan/tort2.png" alt="Tofu Afumat"></a>
+                <h4>Tort vegan cu ciocolata</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>59.99 Lei</p>
+            </div>
+        </div>
+
+<!-- !------------- -->
+
+
+    </div>
+    </div>
+
+<!-- !------footer------- -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Descarcă aplicația noastră!</h3>
+                <p>Aplicația va funcționa pe platforma Android! <br>
+                
+                </p>
+                <div class="app-logo">
+                    <a href="https://github.com/BunghezOvidiu37" target="_blank">
+                        <img src="poze/bottom-application-logo/android_logo_icon_124318.png" alt="android">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="#"><img src="poze/Logo.png" alt="logo"></a>
+                <p>Ne dorim să ducem practicile vegane la cât mai mulți oameni pentru a avea grijă de noi, de animale și de planetă.</p>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us!</h3>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank"><li>Facebook</li></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li>Instagram</li></a>
+                    <a href="https://www.youtube.com/" target="_blank"><li>Youtube</li></a>
+                    <br>
+                    <li>e-Mail US!</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Meatless Shop</p>
+    </div>
+</div>
+
+
+<!-- ! JS script here for toggleMenu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == '0px'){
+                MenuItems.style.maxHeight = '200px'
+            }
+
+            else{
+                MenuItems.style.maxHeight = '0px'
+            }
+
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

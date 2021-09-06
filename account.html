@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toate Produsele - Meatless Shop</title>
+    <link rel="stylesheet" href="customizare-main-page.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- !The top Part ( the header) -->
+
+    <style>
+        body{
+            background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);;
+        }
+    </style>
+
+        <div class="container container-top">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="main-page.html">
+                        <img src="poze/Logo.png" alt="Logo" width="200px">
+                    </a>
+                </div>
+                <nav class="navbar-buttons">
+                    <ul id="MenuItems">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Produse</a></li>
+                        <li><a href="#">Despre Noi</a></li>
+                        <li><a href="#">Contacte</a></li>
+                        <li><a href="account.html">Contul tău</a></li> 
+                    </ul>
+
+                </nav>
+                <img src="poze/cart.png" alt="Cart Image" width="40px" height="40px">
+                <img src="poze/menu-icon.png" alt="menu icon" class="menu-icon" onclick="menuToggle()">
+            </div>
+        </div>
+
+        <!-- !account page -->
+
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="poze/account-pics/account-pic1.gif" id="gif-account-page" alt="account-main-pic" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="indicator">
+                            </div>
+
+                            <form id="loginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="button-main-page">Login</button>
+                                <a href="#" id="forgot-password">Forgot password?</a>
+                            </form>
+
+                            <form id="registrationForm">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="button-main-page">Register</button>
+                                
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<!-- !------footer------- -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Descarcă aplicația noastră!</h3>
+                <p>Aplicația va funcționa pe platforma Android! <br>
+                
+                </p>
+                <div class="app-logo">
+                    <a href="https://github.com/BunghezOvidiu37" target="_blank">
+                        <img src="poze/bottom-application-logo/android_logo_icon_124318.png" alt="android">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="#"><img src="poze/Logo.png" alt="logo"></a>
+                <p>Ne dorim să ducem practicile vegane la cât mai mulți oameni pentru a avea grijă de noi, de animale și de planetă.</p>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us!</h3>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank"><li>Facebook</li></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li>Instagram</li></a>
+                    <a href="https://www.youtube.com/" target="_blank"><li>Youtube</li></a>
+                    <br>
+                    <li>e-Mail US!</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Meatless Shop</p>
+    </div>
+</div>
+
+
+
+
+
+<!-- ! JS script here for toggleMenu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == '0px'){
+                MenuItems.style.maxHeight = '200px'
+            }
+
+            else{
+                MenuItems.style.maxHeight = '0px'
+            }
+
+        }
+    </script>
+
+
+    <!-- !js for toggle form -->
+
+    <script>
+
+        var loginFrorm = document.getElementById("LoginForm");
+        var registrationForm = document.getElementById("registrationForm");
+        var indicator = document.getElementById("indicator");
+        
+
+
+        function register(){
+            registrationForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+
+
+        }
+
+        function login(){
+            registrationForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

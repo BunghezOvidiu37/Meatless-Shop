@@ -1,0 +1,145 @@
+body{
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    color: black;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    color: tomato;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+nav li a:hover{
+    color: yellow;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+.alert-danger{
+    border-radius: 20px;
+    background-color: black;
+    color: red;
+    text-align: center;
+}
+
+.card{
+    
+    background: linear-gradient(to right, #c21500, #ffc500); 
+    color: white;
+}
+
+.card, .form-text{
+    color: white;
+}
+.card-header{
+    font-size: 25px;
+    text-align: center;
+}
+
+label{
+    font-size: 22px;
+}
+
+.card-body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 50%;
+
+}
+
+.card{
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+.card-header{
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+form{
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.btn, .btn-primary{
+    border-radius: 20px;
+    background-color: rgb(51, 50, 50);
+
+}
+
+.btn-primary:hover{
+    transform: scale(1.2);
+    background-color: tomato;
+    
+    border-color: transparent;
+}
+
+
+
+/* !pagina principala */
+
+.jumbotron{
+    border-radius: 20px;
+    background: linear-gradient(to right, #c21500, #ffc500);
+    margin-bottom: auto;
+    color: white;
+}
+
+
+.container-main-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.btn-account-page{
+    background-color: black;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 4%;
+    border-color: transparent;
+}
+
+.btn-account-page:focus{
+    outline: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.account-img{
+    position: relative;
+    bottom: 0;
+}

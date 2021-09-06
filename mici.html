@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toate Produsele - Meatless Shop</title>
+    <link rel="stylesheet" href="customizare-main-page.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- !The top Part ( the header) -->
+
+
+        <div class="container container-top">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="main-page.html">
+                        <img src="poze/Logo.png" alt="Logo" width="200px">
+                    </a>
+                </div>
+                <nav class="navbar-buttons">
+                    <ul id="MenuItems">
+                        <li><a href="main-page.html">Home</a></li>
+                        <li><a href="produse.html">Produse</a></li>
+                        <li><a href="Despre-Noi/despre.html">Despre Noi</a></li>
+                        <li><a href="contacte.html">Contacte</a></li>
+                        <li><a href="http://localhost:5001/">Contul tău</a></li>  
+
+                    </ul>
+
+                </nav>
+                <a href="/cart.html" id="container-cart-icon">
+                    <img src="/poze/cart.png" alt="Cart Image" width="40px" height="40px">
+                    <p id="added-product-number"></p>
+                </a>
+                <img src="poze/menu-icon.png" alt="menu icon" class="menu-icon" onclick="menuToggle()">
+
+            </div>
+            
+        </div>
+
+        <!-- !Single products details -->
+
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="poze/verdino-mici.png" alt="burger" width="100%" id="productImg">
+
+
+
+
+
+
+                </div>
+                <div class="col-2">
+                    <p>Home / Mici</p>
+                    <h1>Mici Vegani de la Verdino</h1>
+                    <h4 id="pretInitial">12.00 Lei</h4>
+                    <div class="arrange-promo-code">
+                        <textarea id="promoInput" cols="10" rows="1" placeholder="cod promo" value="vegan"></textarea>
+                    
+                        <button onclick="discount()" id="buttonPromoCode">Adaugă cod</button>
+                    </div>
+                    <input type="number" value="1">
+                    <a href="#" class="button-main-page">Add to cart</a>
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Gramaj: 180g <br>
+                        Aperitiv vegetal pe bază de proteină de mazăre. <br>
+                        Ambalat în atmosferă protectoare. <br>
+                        Fără alergeni <br>
+                        Fără Organisme Modificate Genetic <br>
+                        Fără SOIA <br>
+                        Fără gluten <br>
+                        Fără lactoză</p>
+                </div>
+                <script>
+                    
+                    function discount(){
+                        var codDiscount = document.getElementById('promoInput').value;
+                        
+                        if(codDiscount == 'xa25' || codDiscount == 'Vegan25%'){
+                            var pretInitial = document.getElementById('pretInitial');
+                            var reducere = pretInitial.textContent;
+                            var transformare = parseInt(reducere);
+                            var calculDiscountTotal = transformare * (100-25) / 100;
+
+                            document.getElementById('pretInitial').innerHTML = calculDiscountTotal;
+                            console.log('conversia a avut loc cu success!')
+                        }
+
+                        else{
+                            alert('Codul promoțional este invalid!');
+                        }
+                    }
+
+
+
+                </script>
+            </div>
+        </div>
+
+
+        <!-- ! -----------------title --------------  -->
+        <!-- todo products -->
+
+
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View more</p>
+            </div>
+        </div>
+
+    <div class="small-container">
+
+
+        <div class="row">
+            <div class="col-4">
+                <a href="burger-verdino.html"><img src="poze/verdino-burger.png" alt="verdino-burger"></a>
+                <h4>Burger Vegan Congelat x2 buc</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>17.00 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="guada.html"><img src="poze/verdino-branza.png" alt="verdino-burger"></a>
+                <h4>&nbsp;Gouda Vegană &nbsp;150gr &nbsp;&nbsp;x1 buc
+                </h4>
+
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>15.00 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="hot-dog.html"><img src="poze/verdino-hotdog.png" alt="verdino-burger"></a>
+                <h4>Hot-Dog Vegan Congelați x 14 buc</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p>22.00 Lei</p>
+            </div>
+
+            <div class="col-4">
+                <a href="mici.html"><img src="poze/verdino-mici.png" alt="verdino-burger"></a>
+                <h4>Mici Vegani Congelat x4 buc</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>12.00 Lei</p>
+            </div>
+        
+
+        </div>
+
+    </div>
+    </div>
+
+<!-- !------footer------- -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Descarcă aplicația noastră!</h3>
+                <p>Aplicația va funcționa pe platforma Android! <br>
+                
+                </p>
+                <div class="app-logo">
+                    <a href="https://github.com/BunghezOvidiu37" target="_blank">
+                        <img src="poze/bottom-application-logo/android_logo_icon_124318.png" alt="android">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="main-page.html"><img src="poze/Logo.png" alt="logo"></a>
+                <p>Ne dorim să ducem practicile vegane la cât mai mulți oameni pentru a avea grijă de noi, de animale și de planetă.</p>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us!</h3>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank"><li>Facebook</li></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li>Instagram</li></a>
+                    <a href="https://www.youtube.com/" target="_blank"><li>Youtube</li></a>
+                    <br>
+                    <li>e-Mail US!</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Meatless Shop</p>
+    </div>
+</div>
+
+
+<!-- ! JS script here for toggleMenu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == '0px'){
+                MenuItems.style.maxHeight = '200px'
+            }
+
+            else{
+                MenuItems.style.maxHeight = '0px'
+            }
+
+        }
+    </script>
+
+
+    <!-- !js for product gallery -->
+
+    <script>
+        var productImg
+    </script>
+
+
+    <!-- !js for product gallery -->
+
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function(){
+            productImg.src = smallImg[0].src;
+        }
+
+        smallImg[1].onclick = function(){
+            productImg.src = smallImg[1].src;
+        }
+
+        smallImg[2].onclick = function(){
+            productImg.src = smallImg[2].src;
+        }
+
+        smallImg[3].onclick = function(){
+            productImg.src = smallImg[3].src;
+        }
+    </script>
+
+    <script src="add-to-cart.js"></script>
+
+
+
+</body>
+</html>
+
