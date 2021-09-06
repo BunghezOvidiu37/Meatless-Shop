@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="contact-body">
 
     <!-- !The top Part ( the header) -->
 
@@ -40,7 +43,7 @@
        <h1>Pagina de contact!</h1>
        <br><br>
 
-       <div class="container">
+       <div class="container contact-form">
 
         <form method="POST" action="https://formspree.io/f/xqkwbqko" id="my-form">
       
@@ -50,12 +53,10 @@
             <label for="lname">Prenume</label>
             <input type="text" id="lastName" name="Prenume" placeholder="Prenumele tău..." required>
       
-            <label for="email">Email</label><br>
+            <label for="email">Email</label>
             <input class="email" type="email" name="Email" placeholder="Email-ul tău..." required>
-      
+      <br>
           <label for="" id="message-label">Message</label>
-          <br>
-          <br>
           <textarea 
           id="message" 
           name="Mesajul" 
@@ -64,8 +65,8 @@
           cols="30"
           rows="10"
           ></textarea>
+          <input type="submit" value="Submit" class="contact-button-submit">
       
-          <input type="submit" value="Submit" class="contacte-button">
       
         </form>
       </div>
